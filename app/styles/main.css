@@ -5,6 +5,10 @@
   padding: 0.2em 0;
 }
 
+.highlight {
+  color: coral;
+}
+
 body {
   padding: 0;
 }
