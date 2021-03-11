@@ -7,29 +7,9 @@
  * # udacimealsApp
  *
  * Main module of the application.
+ * if it doesn't depend on any other modules `udacimealsApp`, [] will be where the modules go
  */
 angular
-  .module('udacimealsApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+  .module('udacimealsApp', []);    /* to create a module that doesn't require other modules */
+
+// angular.module('udacimealsApp')  /* this is to get the module created above */
