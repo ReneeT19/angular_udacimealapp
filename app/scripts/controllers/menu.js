@@ -22,30 +22,12 @@ angular.module('udacimealsApp')
   //add properties to the controller, and controller to the module
 
   angular.module('udacimealsApp')
-  .controller('MenuCtrl', function () {
-    this.items = [
-      {
-        id: 'chicken-pot-pie',
-        name: 'Chicken Pot Pie',
-        img: 'chicken-pot-pie.jpg',
-        calories: 430,
-        rating: 4.1
-      },
-      {
-        id: 'hot-pot',
-        name: 'Hot Pot',
-        img: 'hot-pot.jpg',
-        calories: 1200,
-        rating: 5
-      },
-      {
-        id: 'mango-rice-pudding',
-        name: 'Mango Rice Pudding',
-        img: 'mango-rice-pudding.jpg',
-        calories: 650,
-        rating: 3.7
-      },
-    ]
+  .controller('MenuCtrl', ['foodFinder', function (menu) {
+    var vm = this;
+
+    menu.getMenu().then(function(data) {
+      vm.items = data;
+    });
 
     this.increment = function(item) {
       //item rating += 0.1;
@@ -57,6 +39,6 @@ angular.module('udacimealsApp')
       item.rating = ((item.rating * 10) - 1) / 10;
     };
 
-  });
+  }]);
 
   

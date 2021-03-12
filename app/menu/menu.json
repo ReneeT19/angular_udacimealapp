@@ -1,0 +1,23 @@
+[
+    {
+    "id": "chicken-pot-pie",
+    "name": "Chicken Pot Pie",
+    "img": "chicken-pot-pie.jpg",
+    "calories": 430,
+    "rating": 4.1
+    },
+    {
+    "id": "hot-pot",
+    "name": "Hot Pot",
+    "img": "hot-pot.jpg",
+    "calories": 1200,
+    "rating": 5
+    },
+    {
+    "id": "mango-rice-pudding",
+    "name": "Mango Rice Pudding",
+    "img": "mango-rice-pudding.jpg",
+    "calories": 650,
+    "rating": 3.7
+    }
+  ]

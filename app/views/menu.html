@@ -7,11 +7,11 @@
             <button ng-click="menu.increment(item)">+</button>
             <button ng-click="menu.decrement(item)">-</button>
             <p>
-                <br><textarea ng-model="menu.newReview" name="menu.review" rows="3" col="40"></textarea>
+                <br><textarea ng-model="item.newReview" name="item.review" rows="3" col="40"></textarea>
             </p>
             <p>
                 {{item.newReview}}
-                <span ng-if="!menu.newReview">Why not write a review!</span>
+                <span ng-if="!item.newReview">Why not write a review!</span>
             </p>
         </div>
     </div>
